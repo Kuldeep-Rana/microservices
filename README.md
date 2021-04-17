@@ -1,10 +1,10 @@
 # microservices
 
-# I am developing a sample app using microservice architecture using Spring boot. The aim is to get cover most of the topics in microservices by implementing them. 
+# I am developing a sample app using microservice architecture using Spring boot. 
 
-# I will be using docker for containerization and planning to deploy the services in AWS cloud once devlopment is completed. 
+# The aim is to get cover most of the topics in microservices by implementing them.
 
-# Some of the major component that will be used are 
+# I will be using Docker for containerization and planning to deploy the services in the AWS cloud once development is completed.Some of the major components that will be used are
 
  1. Eureka server for service discovery
  2. Spring cloud config
