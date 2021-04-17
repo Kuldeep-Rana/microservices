@@ -4,7 +4,9 @@
 
 # The aim is to cover most of the topics in microservices by implementing them.
 
-# I will be using Docker for containerization and planning to deploy the services in the AWS cloud once development is completed.Some of the major components that will be used are
+# I will be using Docker for containerization and planning to deploy the services in the AWS cloud once development is completed.
+
+# The major components I will use are:
 
  1. Eureka server for service discovery
  2. Spring cloud config
