@@ -4,7 +4,7 @@
 
 # I will be using docker for containerization and planning to deploy the services in AWS cloud once devlopment is completed. 
 
-# Some of the major component that we will used are 
+# Some of the major component that will be used are 
 
  1. Eureka server for service discovery
  2. Spring cloud config
