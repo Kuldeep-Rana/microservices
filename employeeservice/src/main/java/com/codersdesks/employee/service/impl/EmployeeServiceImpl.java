@@ -1,7 +1,9 @@
 package com.codersdesks.employee.service.impl;
 
 import com.codersdesks.employee.entity.Employee;
+import com.codersdesks.employee.repo.EmployeeRepo;
 import com.codersdesks.employee.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,33 +11,37 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
+    @Autowired
+    private EmployeeRepo employeeRepo;
+
     @Override
     public Employee create(Employee employee) {
-        return null;
+        return employeeRepo.save(employee);
+
     }
 
     @Override
     public Employee findById(Long id) {
-        return null;
+        return employeeRepo.findById(id).orElse(null);
     }
 
     @Override
     public List<Employee> findAll() {
-        return null;
+        return employeeRepo.findAll();
     }
 
     @Override
     public Employee update(Employee employee) {
-        return null;
+        return employeeRepo.save(employee);
     }
 
     @Override
-    public Employee delete(Employee employee) {
-        return null;
+    public void delete(Employee employee) {
+        employeeRepo.delete(employee);
     }
 
     @Override
-    public Employee deleteById(Long id) {
-        return null;
+    public void deleteById(Long id) {
+        employeeRepo.deleteById(id);
     }
 }
