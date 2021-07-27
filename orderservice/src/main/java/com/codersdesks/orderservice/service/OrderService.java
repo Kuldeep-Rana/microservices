@@ -28,7 +28,7 @@ public class OrderService {
         payment.setOrderId(order.getId());
 
         PaymentServiceRequest paymentRequest = new PaymentServiceRequest(payment);
-        PaymentServiceResponse response = restTemplate.postForObject("http://localhost:9090/payment/pay",paymentRequest, PaymentServiceResponse.class);
+        PaymentServiceResponse response = restTemplate.postForObject("http://PAYMENT-SERVICE/payment/pay",paymentRequest, PaymentServiceResponse.class);
         payment = response.getPayment();
         order.setPaymentStatus(payment.getPaymentStatus());
         repository.save(order);
