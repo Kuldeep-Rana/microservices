@@ -27,7 +27,6 @@ classes/
 *mvnw
 *mvnw.cmd
 
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -40,5 +39,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-.idea
