@@ -24,6 +24,5 @@ public class PaymentService {
         payment.setPaymentTime(LocalDateTime.now());
         repository.save(payment);
 
-        return new ServiceResponse(payment);
-    }
-}
+        return ServiceResponse.builder().payment(payment).build();
+    }}
