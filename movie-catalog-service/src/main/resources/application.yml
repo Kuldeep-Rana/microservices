@@ -4,7 +4,5 @@ server:
     context-path: /movie
 
 movie:
-  info:
-    url: http://localhost:8282/movie/info/
-  rating:
-    url: http://localhost:8383/movie/rating/
+  infoUrl: http://localhost:8282/movie/info/
+  ratingUrl : http://localhost:8383/movie/rating/
