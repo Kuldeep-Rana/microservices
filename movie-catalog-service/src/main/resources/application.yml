@@ -1,0 +1,10 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /movie
+
+movie:
+  info:
+    url: http://localhost:8282/movie/info/
+  rating:
+    url: http://localhost:8383/movie/rating/
