@@ -2,3 +2,10 @@ server:
   port: 8383
   servlet:
     context-path: /movie
+spring:
+  application:
+    name: movie-rating-service
+
+eureka:
+  instance:
+    preferIpAddress: true

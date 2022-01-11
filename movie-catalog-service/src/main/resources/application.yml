@@ -4,5 +4,13 @@ server:
     context-path: /movie
 
 movie:
-  infoUrl: http://localhost:8282/movie/info/
-  ratingUrl : http://localhost:8383/movie/rating/
+  infoUrl: http://movie-info-service/movie/info/
+  ratingUrl : http://movie-rating-service/movie/rating/
+
+spring:
+  application:
+    name: movie-catalog-service
+
+eureka:
+  instance:
+    preferIpAddress: true

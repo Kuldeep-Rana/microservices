@@ -2,3 +2,10 @@ server:
   port: 8282
   servlet:
     context-path: /movie
+spring:
+  application:
+    name: movie-info-service
+
+eureka:
+  instance:
+    preferIpAddress: true
